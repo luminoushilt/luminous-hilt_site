@@ -16,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
         rel="stylesheet"
     />
+    <script async src="https://kit.fontawesome.com/f774bb926b.js" crossorigin="anonymous"></script>
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
