@@ -22,7 +22,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="antialiased flex flex-col">
-<header class="bg-gray-700 text-white sticky top-0 z-10">
+<header class="bg-gray-700 mb-0 text-white sticky top-0 z-10">
     <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
 
         <a href="/" class="text-3xl font-medium flex items-center">
@@ -31,7 +31,8 @@
         </a>
         <nav class="hidden md:flex md:justify-evenly md:mb-0 md:space-x-8 md:text-xl" aria-label="main">
             <a href="/" class="hover:opacity-90 hover:text-orange-400">Home</a>
-            <a href="/about" class="hover:opacity-90 hover:text-orange-400">About</a>
+            <a href="/About" class="hover:opacity-90 hover:text-orange-400">About</a>
+            <a href="/Contact" class="hover:opacity-90 hover:text-orange-400">Contact</a>
         </nav>
         @if (Route::has('login'))
             <div class="hidden px-6 py-4 sm:max-w-2xl sm:flex sm:ml-0">
@@ -49,7 +50,7 @@
         @endif
     </section>
 </header>
-<main class="relative flex items-top justify-center min-h-screen bg-gray-100 scroll-mt-40 sm:items-center py-4 sm:pt-0">
+<main class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         {{ $slot }}
     </div>
