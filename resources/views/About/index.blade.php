@@ -1,6 +1,6 @@
 <x-guest-layout>
     <x-hero-section class="h-96 -mt-4 sm:mt-0 ml-3 sm:-ml-28 pt-0 pl-0" style="background-image:url({{ asset('build/assets/img/science-innovation.jpg') }})">
-        <h1 class="text-7xl font-serif font-bold text-white" style="text-shadow: 5px 7px 15px #333;">About Us</h1>
+        <h1 class="text-6xl sm:text-7xl font-serif font-bold text-white" style="text-shadow: 5px 7px 15px #333;">About Us</h1>
     </x-hero-section>
     <section class="mt-4 py-16 pl-7 pr-3">
         <div>

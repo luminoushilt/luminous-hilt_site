@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="ml-4 mt-4 text-center text-sm sm:text-right sm:mt-0 sm:ml-4">
-            Copyright &copy; 2009 &#8212; {{ Date('Y') }} &nbsp;Luminous Hilt, LLC.  All rights reserved.
+            Copyright &copy; 2009 &#8212; {{ Date('Y') }} &nbsp;Luminous Hilt, LLC. &nbsp;All rights reserved.
         </div>
     </section>
 </footer>

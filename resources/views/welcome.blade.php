@@ -8,7 +8,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="p-6">
                 <div class="flex items-center">
-                    <i class="text-orange-400 dark:text-white fa-solid fa-code sm:fa-2x"></i>
+                    <i class="text-orange-400 dark:text-white fa-solid fa-code fa-2x"></i>
                     <div class="ml-2 text-lg leading-7 font-semibold"><a href="/Portfolio" class="font-serif font-bold text-orange-400 dark:text-white">Web Development</a></div>
                 </div>
 
@@ -21,7 +21,7 @@
 
             <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                 <div class="flex items-center">
-                    <i class="text-orange-400 dark:text-white fa-solid fa-palette sm:fa-2x"></i>
+                    <i class="text-orange-400 dark:text-white fa-solid fa-palette fa-2x"></i>
                     <div class="ml-2 text-lg leading-7 font-semibold"><a class="font-serif font-bold text-orange-400 dark:text-white">Graphic Design</a></div>
                 </div>
 
@@ -34,7 +34,7 @@
 
             <div class="p-6 border-t border-gray-200 dark:border-gray-700">
                 <div class="flex items-center">
-                    <i class="text-orange-400 dark:text-white fa-solid fa-server sm:fa-2x"></i>
+                    <i class="text-orange-400 dark:text-white fa-solid fa-server fa-2x"></i>
                     <div class="ml-3 text-lg leading-7 font-semibold"><a class="font-serif font-bold text-orange-400 dark:text-white">Web Hosting</a></div>
                 </div>
 
@@ -47,7 +47,7 @@
 
             <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                 <div class="flex items-center">
-                    <i class="text-orange-400 dark:text-white fa-solid fa-screwdriver-wrench sm:fa-2x"></i>
+                    <i class="text-orange-400 dark:text-white fa-solid fa-screwdriver-wrench fa-2x"></i>
                     <div class="ml-2 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Computer Repair</div>
                 </div>
 
