@@ -1,10 +1,16 @@
 <x-mail::message>
-# Introduction
+# New Luminous Hilt Message
 
-The body of your message.
+Subject: {{ $data['subject'] }}
 
-<x-mail::button :url="''">
-Button Text
+Name: {{ $data['name'] }}
+
+Email: {{ $data['email'] }}
+
+Message: {{ $data['body'] }}
+
+<x-mail::button :url="'http://localhost'">
+Check Site
 </x-mail::button>
 
 Thanks,<br>

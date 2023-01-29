@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Mail\contact;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ContactFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +25,9 @@ Route::get('/About', function () {
     return view('/About/index');
 });
 
-Route::get('/Contact', function () {
-    return view('/Contact/index');
-});
+Route::get('/Contact', [ContactFormController::class, 'index']);
+
+Route::post('/Contact', [ContactFormController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

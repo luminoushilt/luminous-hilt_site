@@ -9,7 +9,7 @@
             <img src="{{ asset('build/assets/img/contact-rep.png') }}" alt="Customer Service Graphic" width="350"/>
         </div>
         <div class="grow max-w-xl p-0">
-        <form action="" method="post" class="mx-auto flex flex-col items-center pt-10">
+        <form action="/Contact" method="post" class="mx-auto flex flex-col items-center pt-10">
             @csrf
 
             <x-text-input
@@ -43,7 +43,6 @@
                 :value="@old('body')"
                 class="w-full mt-6 pl-4 placeholder:italic placeholder-gray-300 bg-neutral-700 rounded-md w-full sm:w-5/6 h-40 text-white shadow-xl mb-5"
             >
-
             </x-text-area>
 
             <x-primary-button class="mt-6 self-end sm:mr-12">Submit</x-primary-button>

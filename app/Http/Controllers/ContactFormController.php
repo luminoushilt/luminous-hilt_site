@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactFormController extends Controller
 {
@@ -17,7 +19,7 @@ class ContactFormController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'subject' => 'required',
-            'message' => 'required',
+            'body' => 'required',
         ]);
 
         Mail::to('hwilliams@luminoushilt.com')->send(new ContactFormMail($data));
