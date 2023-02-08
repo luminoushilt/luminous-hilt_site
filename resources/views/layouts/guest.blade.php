@@ -41,20 +41,20 @@
                         afert:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
         </button>
         <nav class="hidden md:flex md:justify-evenly md:ml-auto md:mb-0 md:space-x-8 md:text-xl" aria-label="main">
-            <a href="/" class="hover:opacity-90 hover:text-orange-400">Home</a>
-            <a href="/About" class="hover:opacity-90 hover:text-orange-400">About</a>
-            <a href="/Contact" class="hover:opacity-90 hover:text-orange-400">Contact</a>
+            <a href="{{ url('/') }}" class="hover:opacity-90 hover:text-orange-400">Home</a>
+            <a href="{{ url('About') }}" class="hover:opacity-90 hover:text-orange-400">About</a>
+            <a href="{{ url('Portfolio') }}" class="hover:opacity-90 hover:text-orange-400">Portfolio</a>
+            <a href="{{ url('Contact') }}" class="hover:opacity-90 hover:text-orange-400">Contact</a>
         </nav>
         @if (Route::has('login'))
             <div class="hidden px-6 py-4 sm:max-w-2xl sm:flex sm:ml-2">
                 @auth
                     <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                 @else
-                    <a href="{{ route('login') }}" class="text-sm text-white underline">Log in</a>
+                    <a href="{{ route('login') }}" class="text-sm text-white underline hover:decoration-0">Log in</a>
 
                     @if (Route::has('register'))
-                    <!-- <a href="{{ route('register') }}" class="ml-4 text-sm text-white underline">Register</a> -->
-                        <a href="#" class="ml-4 text-sm text-white underline">Register</a>
+                        <a href="{{ route('register') }}" class="ml-4 text-sm text-white underline">Register</a>
                     @endif
                 @endauth
             </div>
@@ -66,9 +66,10 @@
             &times;
         </button> -->
         <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-            <a href="/" class="w-full text-center py-6 hover:opacity-90">Home</a>
-            <a href="/About" class="w-full text-center py-6 hover:opacity-90">About</a>
-            <a href="/Contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
+            <a href="{{ url('/') }}" class="w-full text-center py-6 hover:opacity-90">Home</a>
+            <a href="{{ url('About') }}" class="w-full text-center py-6 hover:opacity-90">About</a>
+            <a href="{{ url('Portfolio') }}" class="w-full text-center py-6 hover:opacity-90">Portfolio</a>
+            <a href="{{ url('Contact') }}" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
         </nav>
     </section>
 </header>

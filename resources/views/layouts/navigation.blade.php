@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="text-gray-800" />
+                        <img src="{{ asset('build/assets/img/luminous-hilt-logo.png') }}" alt="Luminous Hilt Logo" width="40">
                     </a>
                 </div>
 
@@ -14,6 +14,9 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('demo.index')" :active="request()->routeIs('demo.index')">
+                        {{ __('Demos') }}
                     </x-nav-link>
                 </div>
             </div>

@@ -1,9 +1,11 @@
 <?php
 
-use App\Mail\contact;
+use App\Mail\ContactFormMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DemoController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ContactFormController;
 
 /*
@@ -21,13 +23,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/About', function () {
-    return view('/About/index');
+Route::get('About', function () {
+    return view('About.index');
 });
 
-Route::get('/Contact', [ContactFormController::class, 'index']);
+Route::get('Portfolio', [PortfolioController::class, 'index']);
 
-Route::post('/Contact', [ContactFormController::class, 'store']);
+Route::resource('demo', DemoController::class)->middleware(['auth']);
+
+Route::get('Contact', [ContactFormController::class, 'index']);
+
+Route::post('Contact', [ContactFormController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

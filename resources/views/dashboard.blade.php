@@ -14,6 +14,11 @@
 
                 </div>
             </div>
+            <div class="bg-white overflow-hidden mt-6 shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    Test
+                </div>
+            </div>
         </div>
     </div>
 </x-app-layout>
