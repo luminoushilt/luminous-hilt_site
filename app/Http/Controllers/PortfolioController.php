@@ -9,7 +9,7 @@ class PortfolioController extends Controller
 {
     public function index()
     {
-        $demos = Demo::paginate(20);
+        $demos = Demo::latest()->paginate(20);
         return view('Portfolio.index')->with('demos', $demos);
     }
 }

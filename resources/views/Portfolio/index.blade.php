@@ -1,12 +1,12 @@
 <x-guest-layout>
-    <x-hero-section class="h-96 -mt-4 sm:mt-0 ml-0 sm:-ml-[105px] pt-0 pl-0" style="background-image:url({{ asset('build/assets/img/work_setup_portfolio.jpg') }})">
+    <x-hero-section class="h-96 -mt-4 sm:mt-0 ml-0 sm:-ml-28 pt-0 pl-0" style="background-image:url({{ asset('build/assets/img/work_setup_portfolio.jpg') }})">
         <h1 class="text-6xl sm:text-7xl font-serif font-bold text-white" style="text-shadow: 5px 7px 15px #333;">Portfolio</h1>
     </x-hero-section>
     <section class="mt-4 py-16 pl-7 pr-3">
         <h2 class="text-4xl sm:text-5xl font-serif text-orange-400 underline">Technical Skills</h2>
         <div class="mt-4 py6">
             <h4 class="text-2xl sm:text-3xl font-serif text-orange-400">Platforms/O.S. <strong>:</strong></h4>
-            <p class="sm:text-2xl sm:indent-8">Windows 7, 10, 11, Server 2008, Server 2012, Server 2016, Server 2019, Mac OS X, Mac OS X Server, Ubuntu</p>
+            <p class="sm:text-2xl sm:indent-8">Windows 7, 10, 11, Server 2008, Server 2012, Server 2016, Server 2019, Mac OS, Mac OS Server, Ubuntu</p>
         </div>
         <div class="mt-4 py6">
             <h4 class="text-2xl sm:text-3xl font-serif text-orange-400">Languages <strong>:</strong></h4>
@@ -37,5 +37,6 @@
                 </a>
             </div>
         </div>
+        {{ $demos->links() }}
     </section>
 </x-guest-layout>

@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#F3F4F6" />
     <meta name="Description" content="A new age consulting genre illuminating the path to all your virtual needs!" />
     <link rel="canonical" href="https://luminoushilt.dev" />
-{{--    <link rel="shortcut icon" media="all" href="{{ asset('build/assets/img/luminous-hilt-logo.png') }}" type="image/x-icon" />--}}
 
     <title>{{ config('app.name', 'Luminous Hilt') }}</title>
 
@@ -35,12 +34,11 @@
             <span class="ml-2">Luminous Hilt</span>
         </a>
         <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
-            <!-- &#9776; -->
             <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500
                         before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500
-                        afert:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+                        after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
         </button>
-        <nav class="hidden md:flex md:justify-evenly md:ml-auto md:mb-0 md:space-x-8 md:text-xl" aria-label="main">
+        <nav class="hidden md:block md:ml-auto space-x-8 text-xl" aria-label="main">
             <a href="{{ url('/') }}" class="hover:opacity-90 hover:text-orange-400">Home</a>
             <a href="{{ url('About') }}" class="hover:opacity-90 hover:text-orange-400">About</a>
             <a href="{{ url('Portfolio') }}" class="hover:opacity-90 hover:text-orange-400">Portfolio</a>
@@ -54,17 +52,17 @@
                     <a href="{{ route('login') }}" class="text-sm text-white underline hover:decoration-0">Log in</a>
 
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 text-sm text-white underline">Register</a>
+                        <!-- <a href="{{ route('register') }}" class="ml-4 text-sm text-white underline">Register</a> -->
                     @endif
                 @endauth
             </div>
         @endif
     </section>
 
-    <section id="mobile-menu" class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
-        <!-- <button id="close" class="text-8xl self-end px-6">
+    <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex flex-col justify-content-center origin-top animate-open-menu hidden">
+        <button id="close" class="block ml-auto text-8xl px-6">
             &times;
-        </button> -->
+        </button>
         <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
             <a href="{{ url('/') }}" class="w-full text-center py-6 hover:opacity-90">Home</a>
             <a href="{{ url('About') }}" class="w-full text-center py-6 hover:opacity-90">About</a>
